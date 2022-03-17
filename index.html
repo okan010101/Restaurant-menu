@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OKAN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div id="main-container">
+        <div class="container-left">
+            <div class="sidenav" style="font-size: 20px;width: 300px; height: 750px;">
+                <ul>
+
+                    <li class="tablinks" onclick="linkGoster(event, 'about')">TOSTLAR</li>
+                    <li class="tablinks" onclick="linkGoster(event, 'services')">SALATALAR</li>
+                    <li class="tablinks" onclick="linkGoster(event, 'clients')">PİZZALAR</li>
+                    <li class="tablinks" onclick="linkGoster(event, 'contact')">DÖNERLER</li>
+
+
+                </ul>
+                <button class="dropdown-btn" style="font-size: 20px; left: 2px;">KAHVALTILIKLAR
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <ul>
+
+                        <li class="tablinks" onclick="linkGoster(event, 'tabs-1')"> ATIŞTIRMALIK KAHVALTI</li>
+                        <li class="tablinks" onclick="linkGoster(event, 'tabs-2')">KAHVALTI TABAGI</li>
+                        <button class="dropdown-btn"
+                            style="background-color: darkslateblue; font-size: 17px; left: 2px;">İKRAMLAR
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <ul>
+
+                                <li class="tablinks" onclick="linkGoster(event, 'tabs-1')"> + ÇAY</li>
+                                <li class="tablinks" onclick="linkGoster(event, 'tabs-2')">+ KAHVE</li>
+
+                            </ul>
+                        </div>
+                        <li class="tablinks" onclick="linkGoster(event, 'tabs-3')">SICAK KAHVALTI</li>
+                    </ul>
+                </div>
+
+
+
+
+                <!-- MAKARNA -->
+
+                <button class="dropdown-btn" style="font-size: 20px; left: 2px;">MAKARNALAR
+                    <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="dropdown-container">
+                    <ul>
+
+                        <li class="tablinks" onclick="linkGoster(event, 'tabs-7')"> SPAGHETTİ</li>
+                        <li class="tablinks" onclick="linkGoster(event, 'tabs-8')">TAVUKLU MAKARNA</li>
+                        <li class="tablinks" onclick="linkGoster(event, 'tabs-9')"> MANTARLI MAKARNA</li>
+                    </ul>
+                </div>
+
+
+                <!-- ÇORBALR -->
+
+                <button class="dropdown-btn" style="font-size: 20px; left: 2px;">ÇORBALAR
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <ul>
+
+                        <li class="tablinks" onclick="linkGoster(event, 'tabs-10')"> MERCİMEK ÇORBASI</li>
+                        <li class="tablinks" onclick="linkGoster(event, 'tabs-11')">TAVUK ÇORBASI</li>
+                        <li class="tablinks" onclick="linkGoster(event, 'tabs-12')">YAYLA ÇORBASI</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="container-right">
+            <header>
+                <a href="#" class="logo"><i class="fas fa-utensils"></i>OGGA.</a>
+                <h1 style="text-align: center;">--NAZAR--</h1>
+
+                <div class="icons">
+                    <i class="fas fa-bars" id="menu-bars"></i>
+                    <i class="fas fa-search" id="search-icon"></i>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                </div>
+
+
+            </header>
+            <div class="container-box">
+                <div class="inner-box linklerim" id="tabs-1">
+                    <h3>ATIŞTIRMALIK KAHVALTI</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eum quis magni molestiae sit,
+                        rerum officiis quaerat consectetur numquam aspernatur ut, fuga nesciunt ea eius temporibus?
+                        Alias
+                    </p>
+                    <img src="https://www.samsuborek.com.tr/assets/images/urunler/1416SERPME-KAHVALTI.jpg" alt="OKI">
+                    <div class="w3-display-topleft w3-black w3-padding"
+                        style="font-weight:700; margin-left: 200px; background: orangered;width: 75px; left: 40px; font-size: 25px;">
+                        95 TL</div>
+
+                </div>
+                <div class="inner-box linklerim" id="tabs-2">
+                    <h3>KAHVALTI TABAGI</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eum quis magni molestiae sit,
+                        rerum officiis quaerat consectetur numquam aspernatur ut, fuga nesciunt ea eius temporibus?
+                        Alias
+                    </p>
+                    <img src="https://www.samsuborek.com.tr/assets/images/urunler/1416SERPME-KAHVALTI.jpg" alt="OKI">
+                    <div class="w3-display-topleft w3-black w3-padding"
+                        style="font-weight:700; margin-left: 200px; background: orangered;width: 75px; left: 40px; font-size: 25px;">
+                        84 TL</div>
+
+                </div>
+                <div class="inner-box linklerim" id="tabs-3">
+                    <h3>SICAK KAHVALTI</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eum quis magni molestiae sit,
+                        rerum officiis quaerat consectetur numquam aspernatur ut, fuga nesciunt ea eius temporibus?
+                        Alias
+                    </p>
+                    <img src="https://www.samsuborek.com.tr/assets/images/urunler/1416SERPME-KAHVALTI.jpg" alt="OKI">
+                    <div class="w3-display-topleft w3-black w3-padding"
+                        style="font-weight:700; margin-left: 200px; background: orangered;width: 75px; left: 40px; font-size: 25px;">
+                        81 TL</div>
+
+                </div>
+
+
+
+
+
+                <div id="about" class="inner-box linklerim">
+                    <h3>TOSTLAR</h3>
+                    <p>Yukarıdaki CSS kodu ile, madde işaretlerini tamamen kaldırdık. Ardından, boşluk kalmaması adına
+                        da,
+                        "padding" değerini "0" olarak belirledik. Bu değerleri dilediğiniz gibi güncelleyebilirsiniz.
+                    </p>
+                    <img src="https://i0.wp.com/www.nazar.com.tr/wp-content/uploads/2020/12/cift-kasarli-tost.jpg?resize=300%2C300&ssl=1"
+                        alt="OKI"> <br> <br>
+                    <div class="w3-display-topleft w3-black w3-padding"
+                        style="font-weight:700; margin-left: 200px; background: orangered;width: 75px; left: 40px; font-size: 25px;">
+                        75 TL</div>
+                    <img src="https://i0.wp.com/www.nazar.com.tr/wp-content/uploads/2020/12/pita-tost.jpg?resize=300%2C300&ssl=1"
+                        alt="">
+                    <div class="w3-display-topleft w3-black w3-padding"
+                        style="font-weight:700; margin-left: 200px; background: orangered;width: 75px; left: 40px; font-size: 25px;">
+                        71 TL</div>
+                </div>
+                <!-- ************************ -->
+
+                <div id="services" class="inner-box linklerim">
+                    <h3>SALATALAR</h3>
+                    <p>Yukarıdaki CSS kodu ile, madde işaretlerini tamamen kaldırdık. Ardından, boşluk kalmaması adına
+                        da,
+                        "padding" değerini "0" olarak belirledik. Bu değerleri dilediğiniz gibi güncelleyebilirsiniz.
+                    </p>
+                    <img src="https://i0.wp.com/www.nazar.com.tr/wp-content/uploads/2020/12/Chia-Tohumlu-Salata.jpg?resize=300%2C300&ssl=1"
+                        alt="OKI">
+                    <div class="w3-display-topleft w3-black w3-padding"
+                        style="font-weight:700; margin-left: 200px; background: orangered;width: 75px; left: 40px; font-size: 25px;">
+                        42 TL</div>
+                </div>
+                <!-- ************************ -->
+                <div id="clients" class="inner-box linklerim">
+                    <h3>PİZZALAR</h3>
+                    <p>Yukarıdaki CSS kodu ile, madde işaretlerini tamamen kaldırdık. Ardından, boşluk kalmaması adına
+                        da,
+                        "padding" değerini "0" olarak belirledik. Bu değerleri dilediğiniz gibi güncelleyebilirsiniz.
+                    </p>
+                    <img src="https://i0.wp.com/www.nazar.com.tr/wp-content/uploads/2021/08/467bf143-a3bb-4922-b8c2-8a7a8245aba1.jpg?resize=300%2C300&ssl=1"
+                        alt="OKI">
+                    <div class="w3-display-topleft w3-black w3-padding"
+                        style="font-weight:700; margin-left: 200px; background: orangered;width: 75px; left: 40px; font-size: 25px;">
+                        48 TL</div>
+                </div>
+                <!-- ************************ -->
+                <div id="contact" class="inner-box linklerim">
+                    <h3>DÖNERLER</h3>
+                    <p>Yukarıdaki CSS kodu ile, madde işaretlerini tamamen kaldırdık. Ardından, boşluk kalmaması adına
+                        da,
+                        "padding" değerini "0" olarak belirledik. Bu değerleri dilediğiniz gibi güncelleyebilirsiniz.
+                    </p>
+                    <img src="https://i0.wp.com/www.nazar.com.tr/wp-content/uploads/2020/12/Et-Doner-Durum.jpg?resize=300%2C300&ssl=1"
+                        alt="OKI">
+                    <div class="w3-display-topleft w3-black w3-padding"
+                        style="font-weight:700; margin-left: 200px; background: orangered;width: 75px; left: 40px; font-size: 25px;">
+                        34 TL</div>
+                </div>
+
+
+                <!-- ************************ -->
+                <div class="inner-box linklerim" id="tabs-7">
+                    <h3>SPAGHETTİ</h3>
+                    <p>Izgara hellim peyniri, sucuk, sosis, kızarmış tost ekmeği üzeri yumurta, patates kızartması,
+                        sigara böreği, ızgara domates & biber, kaşar peyniri
+
+
+                    </p>
+                    <img src="https://i0.wp.com/www.nazar.com.tr/wp-content/uploads/2020/12/Spaghetti-Bolognese.jpg?resize=300%2C300&ssl=1"
+                        alt="OKI"> <br>
+                    <div class="w3-display-topleft w3-black w3-padding"
+                        style="font-weight:700; margin-left: 200px; background: orangered;width: 75px; left: 40px; font-size: 25px;">
+                        18 TL</div>
+                    <img src="https://i0.wp.com/www.nazar.com.tr/wp-content/uploads/2020/12/Spaghetti-Bolognese.jpg?resize=300%2C300&ssl=1"
+                        alt="">
+                    <div class="w3-display-topleft w3-black w3-padding"
+                        style="font-weight:700; margin-left: 200px; background: orangered;width: 75px; left: 40px; font-size: 25px;">
+                        15 TL</div>
+
+                </div>
+
+                <div class="inner-box linklerim" id="tabs-8">
+                    <h3>TAVUKLU MAKARNA</h3>
+                    <p>Izgara hellim peyniri, sucuk, sosis, kızarmış tost ekmeği üzeri yumurta, patates kızartması,
+                        sigara böreği, ızgara domates & biber, kaşar peyniri
+
+
+                    </p>
+                    <img src="https://i0.wp.com/www.nazar.com.tr/wp-content/uploads/2020/12/Korili-Tavuklu-Fettuccine2.jpg?resize=300%2C300&ssl=1"
+                        alt="OKI">
+                    <div class="w3-display-topleft w3-black w3-padding"
+                        style="font-weight:700; margin-left: 200px; background: orangered;width: 75px; left: 40px; font-size: 25px;">
+                        35 TL</div>
+
+                </div>
+
+                <div class="inner-box linklerim" id="tabs-9">
+                    <h3>MANTARLI MAKARNA</h3>
+                    <p>Izgara hellim peyniri, sucuk, sosis, kızarmış tost ekmeği üzeri yumurta, patates kızartması,
+                        sigara böreği, ızgara domates & biber, kaşar peyniri
+
+
+                    </p>
+                    <img src="https://i0.wp.com/www.nazar.com.tr/wp-content/uploads/2020/12/mantarli-tortenelli.jpg?resize=300%2C300&ssl=1"
+                        alt="OKI">
+                    <div class="w3-display-topleft w3-black w3-padding"
+                        style="font-weight:700; margin-left: 200px; background: orangered;width: 75px; left: 40px; font-size: 25px;">
+                        25 TL</div>
+
+                </div>
+                <!-- ************************ -->
+
+                <div class="inner-box linklerim" id="tabs-10">
+                    <h3>MERCİMEK ÇORBASI</h3>
+                    <p>Izgara hellim peyniri, sucuk, sosis, kızarmış tost ekmeği üzeri yumurta, patates kızartması,
+                        sigara böreği, ızgara domates & biber, kaşar peyniri
+
+
+                    </p>
+                    <img src="https://i0.wp.com/www.nazar.com.tr/wp-content/uploads/2021/10/ezogelincorbasi.webp?w=300&ssl=1"
+                        alt="OKI">
+                    <div class="w3-display-topleft w3-black w3-padding"
+                        style="font-weight:700; margin-left: 150px; background: orangered;width: 75px; left: 40px; font-size: 25px;">
+                        20 TL</div>
+
+                </div>
+                <!-- ************************ -->
+                <div class="inner-box linklerim" id="tabs-11">
+                    <h3>TAVUK ÇORBASI</h3>
+                    <p>Izgara hellim peyniri, sucuk, sosis, kızarmış tost ekmeği üzeri yumurta, patates kızartması,
+                        sigara böreği, ızgara domates & biber, kaşar peyniri
+
+
+                    </p>
+                    <img src="https://i0.wp.com/www.nazar.com.tr/wp-content/uploads/2021/08/tavuksuyucorbasi_big.webp?w=300&ssl=1"
+                        alt="OKI">
+                    <div class="w3-display-topleft w3-black w3-padding"
+                        style="font-weight:700; margin-left: 150px; background: orangered;width: 75px; left: 40px; font-size: 25px;">
+                        22 TL</div>
+
+                </div>
+                <!-- ************************ -->
+
+                <div class="inner-box linklerim" id="tabs-12">
+                    <h3>YAYLA ÇORBASI</h3>
+                    <p>Izgara hellim peyniri, sucuk, sosis, kızarmış tost ekmeği üzeri yumurta, patates kızartması,
+                        sigara böreği, ızgara domates & biber, kaşar peyniri
+
+
+                    </p>
+                    <img src="https://i0.wp.com/www.nazar.com.tr/wp-content/uploads/2020/12/mercimek-corbasi.jpg?resize=300%2C300&ssl=1"
+                        alt="OKI">
+                    <div class="w3-display-topleft w3-black w3-padding"
+                        style="font-weight:700; margin-left: 150px; background: orangered;width: 75px; left: 40px; font-size: 25px;">
+                        23 TL</div>
+
+                </div>
+                <!-- ************************ -->
+            </div>
+            <br>
+            <footer id="ayak">
+                <p>Powered by <a href="https://www.instagram.com/okanascioglu/?hl=tr" title="www/instagram"
+                        target="_blank" class="w3-hover-text-green"
+                        style="background: rgb(236, 197, 197);">okanascioglu</a></p>
+            </footer>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+    <script>
+        function linkGoster(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("linklerim");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+</body>
+
+</html>
